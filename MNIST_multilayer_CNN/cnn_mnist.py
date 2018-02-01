@@ -15,8 +15,8 @@ def main(unused_argv):
     # --- BUILD NETWORK GRAPH -------
 
     # placeholders
-    x = tf.placeholder(tf.float32, shape=[None, 784])
-    y = tf.placeholder(tf.int32, shape=[None])
+    x = tf.placeholder(tf.float32, shape=[None, 784], name='X')
+    y = tf.placeholder(tf.int32, shape=[None], name='Y')
     training = tf.placeholder(tf.bool, name='training')
     
     # input layer
